@@ -40,12 +40,12 @@ class ussdController{
             orderDet.location = text.split('*')[1]
             res.send(response)
         }
-        else if(textValue == 2){
-            let response = "CON What is your name"
+        else if(textValue == 3){
+            let response = "CON What is your names"
             orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textvalue == 3){
+        else if(textvalue == 4){
             let response = "END Your request is being processed, our agent will contact you shortly"
             orderDet.name = text.split('*')[3];
             res.send(response)
