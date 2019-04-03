@@ -35,8 +35,8 @@ class ussdController{
             orderDet.type_hostel = text.split('*')[0]
             res.send(response)
         }
-        else if (text != '1' || '2' || '3'){
-            let response = "END Wrong imnput, try again"
+        else if (text != '1','2','3'){
+            let response = "END Wrong input, try again"
             res.send(response)
         }
         else if (text == '1*1'){
