@@ -63,7 +63,7 @@ class ussdController{
             res.send(response)
         }
         else if(textvalue == 4){
-            let response = 'END your request is being processed, our agent will contact you shortly'
+            let response = "END Your request is being processed, our agent will contact you shortly"
             res.send(response)
         }
         else if (text == '1*2'){
@@ -77,7 +77,7 @@ class ussdController{
             res.send(response)
         }
         else if(textvalue == 4){
-            let response = 'END your request is being processed, our agent will contact you shortly'
+            let response = "END Your request is being processed, our agent will contact you shortly"
             res.send(response)
         }
         else if (text == '1*3'){
@@ -91,7 +91,7 @@ class ussdController{
             res.send(response)
         }
         else if(textvalue == 4){
-            let response = 'END your request is being processed, our agent will contact you shortly'
+            let response = "END Your request is being processed, our agent will contact you shortly"
             res.send(response)
         }
         else if (text == '2*1'){
@@ -105,7 +105,7 @@ class ussdController{
             res.send(response)
         }
         else if(textvalue == 4){
-            let response = 'END your request is being processed, our agent will contact you shortly'
+            let response = "END Your request is being processed, our agent will contact you shortly"
             res.send(response)
         }
         else if (text == '2*2'){
@@ -119,7 +119,7 @@ class ussdController{
             res.send(response)
         }
         else if(textvalue == 4){
-            let response = 'END your request is being processed, our agent will contact you shortly'
+            let response = "END Your request is being processed, our agent will contact you shortly"
             res.send(response)
         }
         else if (text == '2*3'){
@@ -133,7 +133,7 @@ class ussdController{
             res.send(response)
         }
         else if(textvalue == 4){
-            let response = 'END your request is being processed, our agent will contact you shortly'
+            let response = "END Your request is being processed, our agent will contact you shortly"
             res.send(response)
         }
         else if (text == '3*1'){
@@ -147,7 +147,7 @@ class ussdController{
             res.send(response)
         }
         else if(textvalue == 4){
-            let response = 'END your request is being processed, our agent will contact you shortly'
+            let response = "END Your request is being processed, our agent will contact you shortly"
             res.send(response)
         }
         else if (text == '3*2'){
@@ -161,7 +161,7 @@ class ussdController{
             res.send(response)
         }
         else if(textvalue == 4){
-            let response = 'END your request is being processed, our agent will contact you shortly'
+            let response = "END Your request is being processed, our agent will contact you shortly"
             res.send(response)
         }
         else if (text == '3*3'){
@@ -175,7 +175,7 @@ class ussdController{
             res.send(response)
         }
         else if(textvalue == 4){
-            let response = 'END your request is being processed, our agent will contact you shortly'
+            let response = "END Your request is being processed, our agent will contact you shortly"
             res.send(response)
         }
 
