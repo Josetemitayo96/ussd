@@ -35,6 +35,10 @@ class ussdController{
             orderDet.type_hostel = text.split('*')[0]
             res.send(response)
         }
+        else if (text != '1' || '2' || '3'){
+            let response = "END Wrong imnput, try again"
+            res.send(response)
+        }
         else if (text == '1*1'){
             let response = "CON What is your telephone number"
             orderDet.location = text.split('*')[1]
