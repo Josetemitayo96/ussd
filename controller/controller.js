@@ -45,7 +45,7 @@ class ussdController{
             orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textvalue == 4){
+        else if(textValue == 4){
             let response = "END Your request is being processed, our agent will contact you shortly"
             orderDet.name = text.split('*')[3];
             res.send(response)
