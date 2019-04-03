@@ -17,50 +17,38 @@ class ussdController{
         let sessionId = req.body.sessionId;
         let serviceCode = req.body.serviceCode;
         let phoneNumber = req.body.phoneNumber;
-        let text = req.body.text
+        let text = req.body.text;
         let textValue = text.split('*').length
 
         if (text == ''){
             let response ='CON What type of accomodation' +
-               '1. Flat '+
-               '2. Shared'+
-               '3. Self-con'
-               orderDet.type_hostel = text
-    
-               res.send(response)
-            }
-    
-        
-        if (text == ''){
-            let response ='CON What type of accomodation' +
-           '1. Flat '+
-           '2. Shared'+
-           '3. Self-con'
-           orderDet.type_hostel = text
-
+            '\n 1. Flat '+
+            '\n 2. Shared'+
+            '\n 3. Self-con'
+           orderDet.type_hostel = text.split('*')[0]
            res.send(response)
         }
         else if (text == '1'){
             let response = 'CON Select your prefared location'+
-            '1. Aserifa '+
-            '2. Damico' +
-            '3. Mayfair'
+            '\n 1. Aserifa '+
+            '\n 2. Damico' +
+            '\n 3. Mayfair'
             orderDet.location = text.split('*')[1]
             res.send(response)
         }
         else if (text == '2'){
             let response = 'CON Select your prefared location'+
-            '1. Aserifa '+
-            '2. Damico' +
-            '3. Mayfair'
+            '\n 1. Aserifa '+
+            '\n 2. Damico' +
+            '\n 3. Mayfair'
             orderDet.location = text.split('*')[1];
             res.send(response)
         }
         else if (text == '3'){
-            let response = 'CON Select your prefared location'+
-            '1. Aserifa '+
-            '2. Damico' +
-            '3. Mayfair'
+            let response = 'CON Select your prefared location '+
+            '\n 1. Aserifa '+
+            '\n 2. Damico' +
+            '\n 3. Mayfair'
             orderDet.location = text.split('*')[1];
             res.send(response)
         }
@@ -69,12 +57,12 @@ class ussdController{
             orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textValue == 2){
+        else if(textValue == 3){
             let response = "CON What is your name"
             orderDet.name = text.split('*')[3];
             res.send(response)
         }
-        else if(textvalue == 3){
+        else if(textvalue == 4){
             let response = 'END your request is being processed, our agent will contact you shortly'
             res.send(response)
         }
@@ -83,12 +71,12 @@ class ussdController{
             orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textValue == 2){
+        else if(textValue == 3){
             let response = "CON What is your name"
             orderDet.name = text.split('*')[3];
             res.send(response)
         }
-        else if(textvalue == 3){
+        else if(textvalue == 4){
             let response = 'END your request is being processed, our agent will contact you shortly'
             res.send(response)
         }
@@ -97,12 +85,12 @@ class ussdController{
             orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textValue == 2){
+        else if(textValue == 3){
             let response = "CON What is your name"
             orderDet.name = text.split('*')[3];
             res.send(response)
         }
-        else if(textvalue == 3){
+        else if(textvalue == 4){
             let response = 'END your request is being processed, our agent will contact you shortly'
             res.send(response)
         }
@@ -111,12 +99,12 @@ class ussdController{
             orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textValue == 2){
+        else if(textValue == 3){
             let response = "CON What is your name"
             orderDet.name = text.split('*')[3];
             res.send(response)
         }
-        else if(textvalue == 3){
+        else if(textvalue == 4){
             let response = 'END your request is being processed, our agent will contact you shortly'
             res.send(response)
         }
@@ -125,12 +113,12 @@ class ussdController{
             orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textValue == 2){
+        else if(textValue == 3){
             let response = "CON What is your name"
             orderDet.name = text.split('*')[3];
             res.send(response)
         }
-        else if(textvalue == 3){
+        else if(textvalue == 4){
             let response = 'END your request is being processed, our agent will contact you shortly'
             res.send(response)
         }
@@ -139,12 +127,12 @@ class ussdController{
             orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textValue == 2){
+        else if(textValue == 3){
             let response = "CON What is your name"
             orderDet.name = text.split('*')[3];
             res.send(response)
         }
-        else if(textvalue == 3){
+        else if(textvalue == 4){
             let response = 'END your request is being processed, our agent will contact you shortly'
             res.send(response)
         }
@@ -153,12 +141,12 @@ class ussdController{
             orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textValue == 2){
+        else if(textValue == 3){
             let response = "CON What is your name"
             orderDet.name = text.split('*')[3];
             res.send(response)
         }
-        else if(textvalue == 3){
+        else if(textvalue == 4){
             let response = 'END your request is being processed, our agent will contact you shortly'
             res.send(response)
         }
@@ -167,12 +155,12 @@ class ussdController{
             orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textValue == 2){
+        else if(textValue == 3){
             let response = "CON What is your name"
             orderDet.name = text.split('*')[3];
             res.send(response)
         }
-        else if(textvalue == 3){
+        else if(textvalue == 4){
             let response = 'END your request is being processed, our agent will contact you shortly'
             res.send(response)
         }
@@ -181,12 +169,12 @@ class ussdController{
             orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textValue == 1){
+        else if(textValue == 3){
             let response = "CON What is your name"
             orderDet.name = text.split('*')[3];
             res.send(response)
         }
-        else if(textvalue == 2){
+        else if(textvalue == 4){
             let response = 'END your request is being processed, our agent will contact you shortly'
             res.send(response)
         }
