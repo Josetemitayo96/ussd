@@ -187,6 +187,10 @@ class ussdController{
             orderDet.name = text.split('*')[3];
             res.send(response)
         }
+        else{
+            let response = "END Invalid option"
+            res.send(response)
+        }
 
         //local database
 
