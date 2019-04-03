@@ -27,18 +27,6 @@ class ussdController{
             '\n 3. Self-con'       
            res.send(response)
         }
-        else if (text != '1'){
-            let response ="End Wrong input try again"
-            res.send(response)
-        }
-        else if (text != '2'){
-            let response ="End Wrong input try again"
-            res.send(response)
-        }
-        else if (text != '3'){
-            let response ="End Wrong input try again"
-            res.send(response)
-        }
         else if (text == '1'){
             let response = 'CON Select your prefared location'+
             '\n 1. Aserifa '+
