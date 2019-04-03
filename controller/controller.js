@@ -41,7 +41,7 @@ class ussdController{
             res.send(response)
         }
         else if(textValue == 3){
-            let response = "CON What is your names"
+            let response = "CON What is your name"
             orderDet.number = text.split('*')[2];
             res.send(response)
         }
@@ -52,30 +52,32 @@ class ussdController{
         }
         else if (text == '1*2'){
             let response = "CON What is your telephone number"
-            orderDet.number = text.split('*')[2];
+            orderDet.location = text.split('*')[1];
             res.send(response)
         }
         else if(textValue == 3){
             let response = "CON What is your name"
-            orderDet.name = text.split('*')[3];
+            orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textvalue == 4){
+        else if(textValue == 4){
             let response = "END Your request is being processed, our agent will contact you shortly"
+            orderDet.name = text.split('*')[3];
             res.send(response)
         }
         else if (text == '1*3'){
             let response = "CON What is your telephone number"
-            orderDet.number = text.split('*')[2];
+            orderDet.location = text.split('*')[1];
             res.send(response)
         }
         else if(textValue == 3){
             let response = "CON What is your name"
-            orderDet.name = text.split('*')[3];
+            orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textvalue == 4){
+        else if(textValue == 4){
             let response = "END Your request is being processed, our agent will contact you shortly"
+            orderDet.name = text.split('*')[3];
             res.send(response)
         }
         else if (text == '2'){
@@ -83,7 +85,51 @@ class ussdController{
             '\n 1. Aserifa '+
             '\n 2. Damico' +
             '\n 3. Mayfair'
+            res.send(response)
+        }
+        else if (text == '2*1'){
+            let response = "CON What is your telephone number"
             orderDet.location = text.split('*')[1];
+            res.send(response)
+        }
+        else if(textValue == 3){
+            let response = "CON What is your name"
+            orderDet.number = text.split('*')[2];
+            res.send(response)
+        }
+        else if(textValue == 4){
+            let response = "END Your request is being processed, our agent will contact you shortly"
+            orderDet.name = text.split('*')[3];
+            res.send(response)
+        }
+        else if (text == '2*2'){
+            let response = "CON What is your telephone number"
+            orderDet.location = text.split('*')[1];
+            res.send(response)
+        }
+        else if(textValue == 3){
+            let response = "CON What is your name"
+            orderDet.number = text.split('*')[2];
+            res.send(response)
+        }
+        else if(textValue == 4){
+            let response = "END Your request is being processed, our agent will contact you shortly"
+            orderDet.name = text.split('*')[3];
+            res.send(response)
+        }
+        else if (text == '2*3'){
+            let response = "CON What is your telephone number"
+            orderDet.location = text.split('*')[1];
+            res.send(response)
+        }
+        else if(textValue == 3){
+            let response = "CON What is your name"
+            orderDet.number = text.split('*')[2];
+            res.send(response)
+        }
+        else if(textValue == 4){
+            let response = "END Your request is being processed, our agent will contact you shortly"
+            orderDet.name = text.split('*')[3];
             res.send(response)
         }
         else if (text == '3'){
@@ -91,92 +137,53 @@ class ussdController{
             '\n 1. Aserifa '+
             '\n 2. Damico' +
             '\n 3. Mayfair'
-            orderDet.location = text.split('*')[1];
             res.send(response)
         }
        
-        else if (text == '2*1'){
-            let response = "CON What is your telephone number"
-            orderDet.number = text.split('*')[2];
-            res.send(response)
-        }
-        else if(textValue == 3){
-            let response = "CON What is your name"
-            orderDet.name = text.split('*')[3];
-            res.send(response)
-        }
-        else if(textvalue == 4){
-            let response = "END Your request is being processed, our agent will contact you shortly"
-            res.send(response)
-        }
-        else if (text == '2*2'){
-            let response = "CON What is your telephone number"
-            orderDet.number = text.split('*')[2];
-            res.send(response)
-        }
-        else if(textValue == 3){
-            let response = "CON What is your name"
-            orderDet.name = text.split('*')[3];
-            res.send(response)
-        }
-        else if(textvalue == 4){
-            let response = "END Your request is being processed, our agent will contact you shortly"
-            res.send(response)
-        }
-        else if (text == '2*3'){
-            let response = "CON What is your telephone number"
-            orderDet.number = text.split('*')[2];
-            res.send(response)
-        }
-        else if(textValue == 3){
-            let response = "CON What is your name"
-            orderDet.name = text.split('*')[3];
-            res.send(response)
-        }
-        else if(textvalue == 4){
-            let response = "END Your request is being processed, our agent will contact you shortly"
-            res.send(response)
-        }
+       
         else if (text == '3*1'){
             let response = "CON What is your telephone number"
-            orderDet.number = text.split('*')[2];
+            orderDet.location = text.split('*')[1];
             res.send(response)
         }
         else if(textValue == 3){
             let response = "CON What is your name"
-            orderDet.name = text.split('*')[3];
+            orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textvalue == 4){
+        else if(textValue == 4){
             let response = "END Your request is being processed, our agent will contact you shortly"
+            orderDet.name = text.split('*')[3];
             res.send(response)
         }
         else if (text == '3*2'){
             let response = "CON What is your telephone number"
-            orderDet.number = text.split('*')[2];
+            orderDet.location = text.split('*')[1];
             res.send(response)
         }
         else if(textValue == 3){
             let response = "CON What is your name"
-            orderDet.name = text.split('*')[3];
+            orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textvalue == 4){
+        else if(textValue == 4){
             let response = "END Your request is being processed, our agent will contact you shortly"
+            orderDet.name = text.split('*')[3];
             res.send(response)
         }
         else if (text == '3*3'){
             let response = "CON What is your telephone number"
-            orderDet.number = text.split('*')[2];
+            orderDet.location = text.split('*')[1];
             res.send(response)
         }
         else if(textValue == 3){
             let response = "CON What is your name"
-            orderDet.name = text.split('*')[3];
+            orderDet.number = text.split('*')[2];
             res.send(response)
         }
-        else if(textvalue == 4){
+        else if(textValue == 4){
             let response = "END Your request is being processed, our agent will contact you shortly"
+            orderDet.name = text.split('*')[3];
             res.send(response)
         }
 
