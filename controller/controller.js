@@ -27,6 +27,10 @@ class ussdController{
             '\n 3. Self-con'       
            res.send(response)
         }
+        else if (text != '1' || text != '2' || text !='3'){
+            let response ="End Wrong input try again"
+            res.send(response)
+        }
         else if (text == '1'){
             let response = 'CON Select your prefared location'+
             '\n 1. Aserifa '+
@@ -35,10 +39,7 @@ class ussdController{
             orderDet.type_hostel = text.split('*')[0]
             res.send(response)
         }
-        else if ( text != '2', text != '1', text !='3'){
-            let response = "END Wrong input, try again"
-            res.send(response)
-        }
+
         else if (text == '1*1'){
             let response = "CON What is your telephone number"
             orderDet.location = text.split('*')[1]
