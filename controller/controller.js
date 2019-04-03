@@ -188,7 +188,7 @@ class ussdController{
             res.send(response)
         }
         else{
-            let response = "END Invalid option"
+            let response = "END Invalid Option"
             res.send(response)
         }
 
@@ -208,10 +208,7 @@ class ussdController{
         //     message: 'details added successfully',
         //     ussdBase
         // })
-
-
-
-        ussdModel.create({
+        const new_model = new ussdModel({
             sessionid : sessionId,
             servicecode : serviceCode,
             phonenumber: phoneNumber,
@@ -219,15 +216,39 @@ class ussdController{
             number: orderDet.number,
             location: orderDet.location,
             house_type:orderDet.type_hostel
-        }).then((resp)=>{
-            console.log("message sent succesfully")
-            return res.status(201).send({
-                error: false,
-                code:201
-            })
-        }).catch((err)=>{
-            console.log("message not sent")
-        })    
+        });
+        new_model.save().then( data=>{
+            if (data.sessionid != "" && data.servicecode !="" && 
+            data.phonenumber !="" && data.name != "" && data.location != "" &&
+            data.number != "" && data.house_type != "" ){
+                orderDet ={
+                    name: data.name,
+                    number: data.number,
+                    type_hostel: data.house_type,
+                    location: data.location,
+                    open: true 
+                }
+
+            }
+        })
+
+        // ussdModel.create({
+        //     sessionid : sessionId,
+        //     servicecode : serviceCode,
+        //     phonenumber: phoneNumber,
+        //     name: orderDet.name,
+        //     number: orderDet.number,
+        //     location: orderDet.location,
+        //     house_type:orderDet.type_hostel
+        // }).then((resp)=>{
+        //     console.log("message sent succesfully")
+        //     return res.status(201).send({
+        //         error: false,
+        //         code:201
+        //     })
+        // }).catch((err)=>{
+        //     console.log("message not sent")
+        // })    
     
     }
 }
