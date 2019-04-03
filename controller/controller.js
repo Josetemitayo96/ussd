@@ -27,7 +27,15 @@ class ussdController{
             '\n 3. Self-con'       
            res.send(response)
         }
-        else if (text != '1' || text != '2' || text !='3'){
+        else if (text != '1'){
+            let response ="End Wrong input try again"
+            res.send(response)
+        }
+        else if (text != '2'){
+            let response ="End Wrong input try again"
+            res.send(response)
+        }
+        else if (text != '3'){
             let response ="End Wrong input try again"
             res.send(response)
         }
