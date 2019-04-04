@@ -217,21 +217,18 @@ class ussdController{
             location: orderDet.location,
             house_type:orderDet.type_hostel
         });
-        new_model.save().then( data=>{
-            if (data.sessionid != "" && data.servicecode !="" && 
-            data.phonenumber !="" && data.name != "" && data.location != "" &&
-            data.number != "" && data.house_type != "" ){
-                orderDet ={
-                    name: data.name,
-                    number: data.number,
-                    type_hostel: data.house_type,
-                    location: data.location,
-                    open: true 
-                }
-
+        new_model.save((err, resp)=>{
+            if (resp){
+                console.log("Message sent successfully")
+                res.status(201).send({
+                error: false,
+                code : 201 
+                })
+            }
+            else{
+                console.log("message not saved")
             }
         })
-
         // ussdModel.create({
         //     sessionid : sessionId,
         //     servicecode : serviceCode,
