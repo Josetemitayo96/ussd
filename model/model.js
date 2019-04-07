@@ -1,34 +1,32 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 
 const ussdSchema = new Schema({
-    name: {
+    
+    number:{
         type: String,
-        required: true
+       
     },
-    number: {
+    location:{
         type: String,
-        required: true
+        
     },
-    location: {
+    house_type:{
         type: String,
-        required: true
-    },
-    house_type: {
-        type: String,
-        required: true
+        
     },
     serviceid:{
         type: String,
-        required: true
+        
     },
     servicecode:{
-        type: String,
-        required: true
+        type: String,       
     },
     phonenumber:{
-        type: String,
-        required: true
+        type: String,     
+    },
+    name:{
+        type: String,      
     }
 })
 

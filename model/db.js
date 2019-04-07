@@ -1,5 +1,8 @@
 const ussdDb =  [
     {
+        sessionid : "",
+        servicecode : "",
+        phonenumber: "",
         name: "",
         number: "",
         location: "",
